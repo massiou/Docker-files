@@ -6,5 +6,5 @@ VOLUME /home/mvelay/test
 
 
 
-CMD /bin/sh
+CMD /bin/sh -c "echo 'test_container'"
 
