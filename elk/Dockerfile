@@ -10,6 +10,7 @@ RUN apt-get -y install openjdk-7-jre
 
 RUN wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.2.0.deb
 RUN dpkg -i elasticsearch-2.2.0.deb
+RUN rm -f elasticsearch-2.2.0.deb
 RUN update-rc.d elasticsearch defaults
 
 RUN echo "deb http://packages.elastic.co/kibana/4.4/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana-4.4.x.list
